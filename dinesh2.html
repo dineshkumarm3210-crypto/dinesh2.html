@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* பொதுவான வடிவமைப்பு */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* ஹோம் ஸ்கிரீன் */
+        .home-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, #1e1e1e, #121212);
+            padding: 20px;
+        }
+
+        .home-section h1 {
+            font-size: 3rem;
+            color: #00adb5;
+            margin-bottom: 10px;
+        }
+
+        .home-section p {
+            font-size: 1.5rem;
+            color: #eee;
+            margin-bottom: 30px;
+        }
+
+        .scroll-btn {
+            background-color: #00adb5;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .scroll-btn:hover {
+            background-color: #007c82;
+        }
+
+        /* அபௌட் ஸ்கிரீன் */
+        .about-section {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #1a1a1a;
+            border-top: 2px solid #222;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #00adb5;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        /* ஃபூட்டர் மெசேஜ் பாக்ஸ் */
+        footer {
+            background-color: #111;
+            padding: 60px 20px;
+            border-top: 2px solid #00adb5;
+        }
+
+        .footer-container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #00adb5;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            background-color: #222;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #00adb5;
+            outline: none;
+        }
+
+        .submit-btn {
+            background-color: #00adb5;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #007c82;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ஹோம் ஸ்கிரீன் -->
+    <section class="home-section">
+        <h1>வணக்கம், நான் ஒரு வலைத்தள வடிவமைப்பாளர்</h1>
+        <p>அழகான மற்றும் நவீன வலைத்தளங்களை உருவாக்குகிறேன்</p>
+        <a href="#about" class="scroll-btn">என்னை பற்றி அறிய</a>
+    </section>
+
+    <!-- 2. அபௌட் ஸ்கிரீன் (தொடர்ச்சியாக வரும்) -->
+    <section id="about" class="about-section">
+        <h2>என்னை பற்றி</h2>
+        <p>எனக்கு கோப்பாய்வு (Coding) செய்வது மிகவும் பிடிக்கும். பயனர்களுக்கு எளிமையான மற்றும் மிக வேகமான இணையதளங்களை உருவாக்குவதே என் முக்கிய இலக்கு ஆகும்.</p>
+    </section>
+
+    <!-- 3. ஃபூட்டர் மெசேஜ் பாக்ஸ் -->
+    <footer>
+        <div class="footer-container">
+            <h3>தொடர்பு கொள்ள</h3>
+            <!-- action பகுதியில் உங்கள் email ஐ மாற்றிக்கொள்ளலாம் -->
+            <form class="contact-form" action="mailto:your-dineshkumarm3210@gmail.com" method="post" enctype="text/plain">
+                <input type="email" name="Email" placeholder="உங்கள் ஜிமெயில் முகவரி..." required>
+                <textarea name="Message" rows="5" placeholder="உங்கள் மெசேஜை இங்கே டைப் செய்யவும்..." required></textarea>
+                <button type="submit" class="submit-btn">மெசேஜ் அனுப்பு</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>
